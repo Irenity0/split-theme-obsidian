@@ -1,34 +1,45 @@
-body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
+.theme-dark {
+	--color-base-00: #000f1a;       /* Deep Oxford Blue background */
+	--color-base-05: #000f1a;       /* Darker Oxford Blue */
+	--color-base-10: #000f1a;       /* Core Oxford Blue */
+	--color-base-20: #000f1a;
+	--color-base-25: #000f1a;
+	--color-base-30: #d2b48c59;
+	--color-base-35: #001826;
+	--color-base-40: #00151f;
+	--color-base-50: #d2b48c;
+	--color-base-60: #d2b48c;
+	--color-base-70: #d2b48c;
+	--color-base-100: #d2b48c;      /* Tan for contrast text */
+
+	--background-primary: var(--color-base-00);
+	--background-secondary: var(--color-base-05);
+	--titlebar-background: var(--color-base-00);
+	--titlebar-background-focused: var(--color-base-10);
+
+	--text-normal: var(--color-base-100);
+	--text-muted: #bfa989;
 }
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
-	display: none;
-}
+.theme-light {
+	--color-base-00: #c9a87e;        /* Very light tan */
+	--color-base-05: #d2b48c;        /* Soft Tan */
+	--color-base-10: #c9a87e;
+	--color-base-20: #c9a87e;
+	--color-base-25: #d6c3b3;
+	--color-base-30: #ccb7a8;
+	--color-base-35: #c9a87e;
+	--color-base-40: #000f1a;
+	--color-base-50: #ae9387;
+	--color-base-60: #000f1a;        /* Oxford Blue */
+	--color-base-70: #000f1a;        /* Deeper Oxford Blue */
+	--color-base-100: #000f1a;
 
-svg * {
-	stroke-linecap: square;
-	stroke-linejoin: miter;
-	rx: 0;
-	ry: 0;
-}
+	--background-primary: var(--color-base-05);
+	--background-secondary: var(--color-base-00);
+	--titlebar-background: var(--color-base-05);
+	--titlebar-background-focused: var(--color-base-10);
 
-.menu {
-	padding: var(--size-2-1);
-}
-
-.menu-item {
-	padding: var(--size-4-1) var(--size-4-2);
-}
-
-.menu-separator {
-	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+	--text-normal: var(--color-base-60);  /* Oxford Blue text */
+	--text-muted: #33445c;
 }
